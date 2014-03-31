@@ -13,5 +13,8 @@
   },
   "resolutions": {
     "ember": "~1.4.0"
+  },
+  "devDependencies": {
+    "emberui": "git@github.com:emberui/emberui.git"
   }
 }

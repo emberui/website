@@ -1,5 +1,5 @@
-`import modalComponent from 'appkit/components/eui-modal'`
-`import modalContentView from 'appkit/views/documentation/modal-example'`
+`import emberui from 'emberui/components/eui-modal'`
+`import modalContentView from '../../views/documentation/modal-example'`
 
 route = Ember.Route.extend
   actions:
