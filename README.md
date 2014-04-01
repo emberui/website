@@ -9,7 +9,7 @@ To get started:
 ``` sh
 git clone git@github.com:emberui/website.git
 cd website
-bundle install
+npm install
 grunt server
 ```
 
