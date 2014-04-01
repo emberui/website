@@ -9,6 +9,9 @@ rm -rf /tmp/dist
 grunt dist         &&
 cp -R dist /tmp/dist  &&
 
+# copy JS files EAK filtered out
+cp -R public/assets/scripts /tmp/dist/assets/scripts
+
 # Checkout gh-pages, save what we need, delete the rest and copy over
 git checkout gh-pages    &&
 git pull --rebase origin gh-pages &&
