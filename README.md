@@ -1,6 +1,6 @@
 # EmberUI Website
 
-The website for the EmberUI project residing at emberui.com.
+The website for the EmberUI project residing at [http://emberui.com](http://emberui.com).
 
 ### Contributing
 
