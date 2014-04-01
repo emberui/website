@@ -19,7 +19,9 @@ rm -r ./*                &&
 cp -R /tmp/dist/* ./        &&
 
 # Commit and push the changes then switch back to master
+git add . &&
 git commit -am "Update website content" &&
 git push origin gh-pages  &&
 git checkout master &&
+rm -rf assets/ &&
 echo "Website update successful"
