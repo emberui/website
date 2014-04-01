@@ -12,13 +12,13 @@ cp -R dist /tmp/dist  &&
 # copy JS files EAK filtered out
 cp -R public/assets/scripts /tmp/dist/assets/scripts &&
 
-# copy gitignore
+# copy 404 page & .gitignore
+cp dist/index.html /tmp/dist/404.html &&
 cp .gitignore /tmp/dist &&
 
 # Checkout gh-pages, save what we need, delete the rest and copy over
 git checkout gh-pages    &&
 git pull --rebase origin gh-pages &&
-cp 404.html /tmp/dist/   &&
 cp CNAME /tmp/dist/      &&
 cp -R builds /tmp/dist/  &&
 rm -r ./*                &&
