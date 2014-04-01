@@ -10,7 +10,10 @@ grunt dist         &&
 cp -R dist /tmp/dist  &&
 
 # copy JS files EAK filtered out
-cp -R public/assets/scripts /tmp/dist/assets/scripts
+cp -R public/assets/scripts /tmp/dist/assets/scripts &&
+
+# copy gitignore
+cp .gitignore /tmp/dist &&
 
 # Checkout gh-pages, save what we need, delete the rest and copy over
 git checkout gh-pages    &&
