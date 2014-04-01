@@ -19,13 +19,43 @@
 <h1>Technical Details</h1>
 
 <p>
-  EmberUI uses EAK for its build process. This will change in the near future to make use of <a href="https://github.com/stefanpenner/ember-cli">ember-cli</a>. See the <a href="http://iamstef.net/ember-app-kit/guides/getting-started.html">EAK Getting Started</a> guide to get up and running building EmberUI yourself.
+  EmberUI uses <a href="https://github.com/joliss/broccoli">Broccoli</a> for its build process. It makes use of <em>broccoli-dist-es6-module</em> to automatically build AMD, Named AMD, and CommonJS modules. There is also a global version available. If you don't know what this is, use the global version.
 </p>
+
+<h3>Installation</h3>
+
+<pre>$ bower install emberui</pre>
 
 <p>
-  EmberUI makes use of the <a href="https://github.com/square/es6-module-transpiler">ES6 module transpiler</a>.
+  or just grab your preferred distribution from the <a href="https://github.com/emberui/emberui/tree/master/dist">Github repository</a>. Then include the scripts in <em>app.js</em>.
 </p>
 
+<h6>AMD</h6>
+
+<p>
+  Register emberui as a <a href="http://requirejs.org/docs/api.html#packages">package</a>, then:
+</p>
+
+<pre>define(['emberui'], ...)</pre>
+
+<h6>Named AMD</h6>
+
+<pre>import emberui from 'emberui';</pre>
+
+<h6>Globals</h6>
+
+<pre>&lt;script src="bower_components/emberui/dist/globals/main.js"&gt;</script></pre>
+
+<br>
+
+<p>
+  There are also some css files that need to be included. The <em>emberui.css</em> stylesheet is required, but <em>default-theme.css</em> is optional if you are creating your own theme.
+</p>
+
+<pre>
+  &lt;link rel="stylesheet" href="/bower_components/emberui/dist/emberui.css"&gt;
+  &lt;link rel="stylesheet" href="/bower_components/emberui/dist/default-theme.css"&gt;
+</pre>
 
 <h3>Dependencies</h3>
 
@@ -34,6 +64,12 @@
 </p>
 
 <ul class="dependencies">
+  <li>
+    <a href="http://handlebarsjs.com">Handlebars</a> (the full one, not the runtime)
+    <p>
+      EmberUI makes use of the <em>template</em> tag and thus currently requires the full Handlebars runtime to work. If you get <em>Uncaught TypeError: Object #<c> has no method 'compile' </em> this is your problem.
+    </p>
+  </li>
   <li>
     <a href="https://github.com/emberjs/list-view">list-view</a>
     <p>
