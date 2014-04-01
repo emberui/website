@@ -1,5 +1,5 @@
-`import Resolver from 'ember/resolver'`
-`import initializer from 'emberui'`
+`import Resolver from 'ember/resolver';`
+`import initializer from 'emberui';`
 
 App = Ember.Application.extend
   LOG_ACTIVE_GENERATION: true
