@@ -29,6 +29,6 @@ git add . &&
 git commit -am "Update website content" &&
 git push origin gh-pages  &&
 git checkout master &&
-echo "Website update successful"
+echo "Website update successful" &&
 #rm -rf assets/ &&
 echo "Finsihed cleanup"
