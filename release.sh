@@ -21,7 +21,7 @@ git checkout gh-pages    &&
 git pull --rebase origin gh-pages &&
 cp CNAME /tmp/dist/      &&
 cp -R builds /tmp/dist/  &&
-git rm -r                &&
+git rm -r ./               &&
 cp -r /tmp/dist/ ./        &&
 
 # Commit and push the changes then switch back to master
