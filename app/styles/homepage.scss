@@ -1,5 +1,3 @@
-@import "compass";
-
 .homepage {
   height: 100%;
   min-height: 550px;
@@ -23,7 +21,6 @@
   .site-navigation {
     z-index: 1;
     background: none;
-    @include transition(opacity 3s);
   }
 
   &.demo {
@@ -31,6 +28,7 @@
     .site-navigation {
       opacity: 0.7;
       text-shadow: none;
+
 
       a {
         color: #63808e;
@@ -64,8 +62,8 @@
     left: 0%;
     width: 200%;
     height: 200%;
-    @include background-image(radial-gradient(circle at bottom right, rgba(226, 239, 247, 1) 0%, rgba(186,217,234,1) 55%, rgba(21,96,173,1) 75%, rgba(3,8,30,1) 95%, rgba(3,8,30,1) 100%));
-    @include transition(left 3.5s, top 3.5s);
+    background-image: radial-gradient(circle at bottom right, rgba(226, 239, 247, 1) 0%, rgba(186,217,234,1) 55%, rgba(21,96,173,1) 75%, rgba(3,8,30,1) 95%, rgba(3,8,30,1) 100%);
+    transition: left 3.5s, top 3.5s;
   }
 
   .slide1 {
@@ -93,8 +91,8 @@
       text-align: center;
       font-weight: 400;
       background: -webkit-linear-gradient(top left, #bfd6e4 0%, #EDF8FF 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
       margin-bottom: 60px;
     }
 
@@ -108,16 +106,16 @@
       background: rgba(3,8,30,0.25);
       border-radius: 5px;
       cursor: pointer;
-      @include transition(background 0.2s);
+      transition: background 0.2s;
 
       &:hover {
         background: rgba(3,8,30,0.35)
       }
 
       span {
-        background: -webkit-linear-gradient(left, #cadfec 0%, #e4f3fc 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background: linear-gradient(left, #cadfec 0%, #e4f3fc 100%);
+        background-clip: text;
+        text-fill-color: transparent;
 
         &:after {
           content: "\f054";
