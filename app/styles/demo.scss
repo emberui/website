@@ -1,0 +1,46 @@
+.demo {
+  h3 {
+    font-size: 24px;
+    font-family: "adelle-sans", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 0 50px 0;
+    text-shadow: 1px 1px rgba(255,255,255,0.7);
+    margin-top: -40px;
+  }
+
+  .box {
+    width: 626px;
+    padding: 50px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    overflow: auto;
+  }
+
+  .login-left {
+    float: left;
+    padding-right: 50px;
+    width: 405px;
+    box-sizing: border-box;
+  }
+
+  .login-right {
+    float: left;
+    padding-left: 50px;
+    width: 220px;
+    box-sizing: border-box;
+
+    .eui-button {
+      display: block;
+    }
+  }
+
+  .divider {
+    margin: -50px 0;
+    width: 1px;
+    height: 148px;
+    float: left;
+    background: #ccd9e0;
+  }
+}
