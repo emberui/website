@@ -1,5 +1,6 @@
 controller = Ember.ObjectController.extend
-  isDemoActive: false
+  isDemoActive: true
+  isSignupActive: true
   emailAddress: null
 
   isInvalidEmail: Ember.computed.empty('emailAddress')
@@ -8,6 +9,9 @@ controller = Ember.ObjectController.extend
     return 'default' if @get('isInvalidEmail')
     return 'primary'
   ).property 'emailAddress'
+
+  signup: ->
+    @set('isSignupActive', true)
 
 
 `export default controller`
