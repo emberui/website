@@ -17,8 +17,6 @@ Router.map ->
     this.route 'select'
     this.route 'textarea'
 
-    this.route 'poplist'
-
   this.route '404', { path: '*path' } # Catch all for all remaining routes
 
 `export default Router`
