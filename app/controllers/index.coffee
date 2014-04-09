@@ -1,6 +1,6 @@
 controller = Ember.ObjectController.extend
-  isDemoActive: true
-  isSignupActive: true
+  isDemoActive: false
+  isSignupActive: false
   emailAddress: null
 
   isInvalidEmail: Ember.computed.empty('emailAddress')
