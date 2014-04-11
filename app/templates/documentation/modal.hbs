@@ -27,7 +27,8 @@ actions: {
     modalComponent.show({
       targetObject: this
       contentViewClass: modalContentView,
-      content: { name: "Jaco" }
+      content: { name: "Jaco" },
+      cancel: 'resetData'
     });
   }
 }</pre>
@@ -87,10 +88,17 @@ actions: {
 <h2>Actions</h2>
 
 <ul class="parameterindex">
-  <li><a href="#section-closemodal">closeModal</a></li>
+  <li><a href="#section-accept">accept</a></li>
+  <li><a href="#section-cancel">cancel</a></li>
 </ul>
 
-<h4 id="section-closemodal">closeModal <span></span></h4>
+<h4 id="section-accept">accept <span></span></h4>
 <p>
-  Closes the modal and removes it from the DOM.
+  Calls the action specified by the user and then closes the modal and removes it from the DOM.
+</p>
+
+
+<h4 id="section-cancel">cancel <span></span></h4>
+<p>
+  Calls the action specified by the user and then closes the modal and removes it from the DOM.
 </p>
