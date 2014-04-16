@@ -16,4 +16,10 @@ route = Ember.Route.extend
         content: { name: "Jaco", message: "This is a great style for more involved modals." }
         style: 'full'
 
+    toggleFirstModal: ->
+      @toggleProperty 'controller.showFirstModal'
+
+    firstModalCancel: ->
+      console.log 'You pressed ESC to close the first modal'
+
 `export default route`

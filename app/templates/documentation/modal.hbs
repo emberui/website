@@ -1,16 +1,61 @@
-<h1>modal</h1>
+<h1>\{{eui-modal}}</h1>
 
 <div class="intro">
-  A programatic modal dialog.
+  A modal dialog that can be used as a block element or created programatically.
 </div>
 
-<h2>Using the Modal</h2>
+
+<h2>Block Element</h2>
 
 <p>
-  A modal can be created programatically using using the <em>show</em> method.
+  The simplest way to use the modal component is to use it like any other block component.
 </p>
 
-<pre>\{{eui-button label='Open Modal' action='showModal'}}</pre>
+<pre>\{{#eui-modal openBinding="showFirstModal" cancel="firstModalCancel"}}
+  &lt;div style="padding: 50px; text-align: center;">
+    &lt;p>
+      You may also press &lt;em>esc&lt;/em> to close this modal.
+    &lt;/p>
+
+    \{{eui-button label="Close Modal" size="small" action="toggleFirstModal"}}
+  &lt;/div>
+\{{/eui-modal}}
+
+\{{eui-button label='Open "default" Style Modal' action="toggleFirstModal"}}</pre>
+
+<pre>var route = Ember.Route.extend({
+  actions: {
+    toggleFirstModal: function() {
+      this.toggleProperty('controller.showFirstModal');
+    },
+    firstModalCancel: function() {
+      console.log('You pressed ESC to close the first modal');
+    }
+  }
+});</pre>
+
+<div class="output">
+  {{#eui-modal openBinding="showFirstModal" cancel="firstModalCancel"}}
+    <div style="padding: 50px; text-align: center;">
+      <p>
+        You may also press <em>esc</em> to close this modal.
+      </p>
+
+      {{eui-button label="Close Modal" size="small" action="toggleFirstModal"}}
+    </div>
+  {{/eui-modal}}
+
+  {{eui-button label='Open "default" Style Modal' action="toggleFirstModal"}}
+</div>
+
+
+<h2>Programmatic</h2>
+
+<p>
+  A modal can be created programatically using using the <em>show</em> method. This is great if you want to do quick a prompt such as delete confirmations.
+</p>
+
+<pre>\{{eui-button label='Open Modal' action='showFullModal'}}</pre>
 
 <pre>import modalContentTemplate from 'appkit/templates/documentation/modal-example'
 
@@ -23,7 +68,7 @@ view = Ember.View.extend({
 import modalContentView from 'appkit/views/documentation/modal-example'
 
 actions: {
-  showModal: function() {
+  showFullModal: function() {
     modalComponent.show({
       targetObject: this
       contentViewClass: modalContentView,
@@ -34,29 +79,28 @@ actions: {
 }</pre>
 
 <div class="output">
-  {{eui-button label='Open Modal' action='showModal'}}
+  {{eui-button label='Open "full" Style Modal' action='showFullModal'}}
 </div>
 
 <p>
-  To close the modal you call the action <em>closeModal</em> from within the view.
+  To close the modal you call the action <em>accept</em> or <em>cancel</em> from within the view.
 </p>
 
 <h2>Parameters</h2>
 
 <ul class="parameterindex">
-  <li class="header">Required</li>
-  <li><a href="#section-targetobject">targetObject</a></li>
-
   <li class="header">Aesthetic</li>
   <li><a href="#section-class">class</a></li>
   <li><a href="#section-style">style</a></li>
+
+  <li class="header">Parameters</li>
+  <li><a href="#section-targetobject">open</a></li>
+  <li><a href="#section-targetobject">targetObject</a></li>
+
+  <li class="header">Actions</li>
+  <li><a href="#section-accept">accept</a></li>
+  <li><a href="#section-cancel">cancel</a></li>
 </ul>
-
-
-<h4 id="section-targetobject">targetObject <span>object</span></h4>
-<p>
-  Sets the target for events triggered within the modal. Set it equal to <em>this</em> to have events handled in the context that opens the modal.
-</p>
 
 
 <h4 id="section-label">class <span>string</span></h4>
@@ -85,20 +129,25 @@ actions: {
 </div>
 
 
-<h2>Actions</h2>
-
-<ul class="parameterindex">
-  <li><a href="#section-accept">accept</a></li>
-  <li><a href="#section-cancel">cancel</a></li>
-</ul>
-
-<h4 id="section-accept">accept <span></span></h4>
+<h4 id="section-open">open <span>boolean</span></h4>
 <p>
-  Calls the action specified by the user and then closes the modal and removes it from the DOM.
+  Used to show and hide the modal when used as a block element. Defaults to <em>false</em> so if you want to show the dialog as soon as the relevant route is visited then you should set it to <em>true</em>.
 </p>
 
 
-<h4 id="section-cancel">cancel <span></span></h4>
+<h4 id="section-targetobject">targetObject <span>object</span></h4>
 <p>
-  Calls the action specified by the user and then closes the modal and removes it from the DOM.
+  Only used if creating the modal programmatically. It sets the target for events triggered within the modal. Set it equal to <em>this</em> to have events handled in the context that opens the modal.
+</p>
+
+
+<h4 id="section-accept">accept <span>string</span></h4>
+<p>
+  You may manually call this action using regular action syntax. Only available if modal was created programatically.
+</p>
+
+
+<h4 id="section-cancel">cancel <span>string</span></h4>
+<p>
+  This action is automatically called if the user closes the dialog by pressing <em>esc</em>. If you created your modal programatically you may manually call this action using regular action syntax.
 </p>
