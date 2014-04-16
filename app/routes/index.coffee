@@ -8,4 +8,7 @@ route = Ember.Route.extend
     showDemo: ->
       @get('controller').set('isDemoActive', true)
 
+    toggleNavigation: ->
+      @toggleProperty 'controller.showNavigation'
+
 `export default route`

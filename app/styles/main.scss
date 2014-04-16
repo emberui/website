@@ -36,40 +36,6 @@ strong {
   font-weight: 600;
 }
 
-.site-navigation {
-  position: relative;
-  z-index: 1;
-  background-image: linear-gradient(left top, #05112c 0%, #0f4078 50%, #2a6fb5 100%);
-  text-shadow: 1px 1px rgba(0,0,0,0.2);
-
-  ul {
-    height: 45px;
-    line-height: 45px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-  }
-
-  li {
-    margin: 0 30px 0 0;
-    float: left;
-
-    &:first-child {
-      font-weight: 600;
-    }
-  }
-
-  a {
-    color: #ffffff;
-
-    &:hover,
-    &.active {
-      color: #ffeeba;
-    }
-  }
-}
-
 
 .docs-navigation {
   float: left;
@@ -113,7 +79,7 @@ strong {
     margin: 0;
   }
 
-  & > ul:first-child {
+  .mobile-float {
     margin-top: 25px;
   }
 
