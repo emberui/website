@@ -9,6 +9,7 @@
 <ul class="parameterindex">
   <li class="header">Aesthetic</li>
   <li><a href="#section-label">label</a></li>
+  <li><a href="#section-listwidth">listWidth</a></li>
   <li><a href="#section-size">size</a></li>
   <li><a href="#section-style">style</a></li>
   <li><a href="#section-icon">icon</a></li>
@@ -45,6 +46,12 @@ optionsPrimary: [
   {{eui-dropbutton label='Actions' options=options}}
   {{eui-dropbutton label='Actions' options=optionsPrimary}}
 </div>
+
+
+<h4 id="section-listwidth">listWidth <span>string</span></h4>
+<p>
+  Width of the popup. You must pass in a CSS size value with the unit. The select uses CSS box-sizing to ensure precentage-based sizes are actual sizes. A width smaller than the width of the button will be ignored.
+</p>
 
 
 <h4 id="section-size">size <span>string</span></h4>
@@ -89,7 +96,7 @@ optionsPrimary: [
 </p>
 
 <div class="output">
-  {{eui-dropbutton icon="fa fa-cog" options=optionsNoLabel}}
+  {{eui-dropbutton icon="fa fa-cog" options=optionsNoLabel listWidth='60px'}}
 </div>
 
 <p>
