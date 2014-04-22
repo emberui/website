@@ -12,7 +12,8 @@
     "ember-testing-httpRespond": "~0.1.1",
     "loader.js": "git://github.com/stefanpenner/loader.js",
     "ember-listview": "https://github.com/geekingreen/ember-list-view.git#master",
-    "emberui": "git@github.com:emberui/emberui.git"
+    "emberui": "git@github.com:emberui/emberui.git",
+    "momentjs": "~2.6.0"
   },
   "resolutions": {
     "ember": "~1.4.0"

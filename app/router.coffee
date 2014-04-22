@@ -10,6 +10,7 @@ Router.map ->
     this.route 'errorhandling'
 
     this.route 'button'
+    this.route 'calendar'
     this.route 'checkbox'
     this.route 'dropbutton'
     this.route 'input'

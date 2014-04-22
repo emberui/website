@@ -1,0 +1,117 @@
+<h1>\{{eui-calendar}}</h1>
+
+<div class="intro">
+  A date selector with a speedy month view.
+</div>
+
+<h2>Parameters</h2>
+
+<ul class="parameterindex">
+  <li class="header">Aesthetic</li>
+  <li><a href="#section-style">style</a></li>
+
+  <li class="header">Attributes</li>
+  <li><a href="#section-month">month</a></li>
+  <li><a href="#section-disableddates">disabledDates</a></li>
+  <li><a href="#section-disablefuture">disableFuture</a></li>
+  <li><a href="#section-disablemanipulation">disableManipulation</a></li>
+  <li><a href="#section-disablepast">disablePast</a></li>
+  <li><a href="#section-maxfuturedate">maxFutureDate</a></li>
+  <li><a href="#section-maxpastdate">maxPastDate</a></li>
+  <li><a href="#section-select">select</a></li>
+  <li><a href="#section-selecteddate">selectedDate</a></li>
+  <li><a href="#section-selecteddates">selectedDates</a></li>
+  <li><a href="#section-hownextmonth">showNextMonth</a></li>
+  <li><a href="#section-showpremonth">showPrevMonth</a></li>
+</ul>
+
+<h4 id="section-style">style <span>string</span></h4>
+<p>
+  The aesthetic style of the calendar.
+</p>
+
+<h5>Values</h5>
+<ul class="defaults">
+  <li>default (default)</li>
+  <li>popup</li>
+</ul>
+
+<pre>\{{eui-calendar style="default"}}
+\{{eui-calendar style="popup"}}</pre>
+
+<div class="output">
+  {{eui-calendar style="default"}}
+  {{eui-calendar style="popup"}}
+</div>
+
+
+<h4 id="section-month">month <span>monent</span></h4>
+<p>
+  The explicit month you want to render.
+</p>
+
+
+<h4 id="section-disableddates">disabledDates <span>array of monents</span></h4>
+<p>
+  Dates to indicate as disabled.
+</p>
+
+
+<h4 id="section-disablefuture">disableFuture <span>boolean</span></h4>
+<p>
+  Prevents the user from navigating into the future. Defaults to false.
+</p>
+
+
+<h4 id="section-disablemanipulation">disableManipulation <span>boolean</span></h4>
+<p>
+  Disable built-in manipulation of <em>selectedDate</em> / <em>selectedDates</em> select action still sent
+</p>
+
+
+<h4 id="section-disablepast">disablePast <span>boolean</span></h4>
+<p>
+  Prevents the user from navigating into the past. Defaults to false.
+</p>
+
+
+<h4 id="section-maxfuturedate">maxFutureDate <span>moment</span></h4>
+<p>
+  Maximum future date.
+</p>
+
+
+<h4 id="section-maxpastdate">maxPastDate <span>moment</span></h4>
+<p>
+  Maximum future date.
+</p>
+
+
+<h4 id="section-select">select <span>action</span></h4>
+<p>
+  Will fire this event with the selected moment when the user selects a date
+</p>
+
+
+<h4 id="section-selecteddate">selectedDate <span>moment</span></h4>
+<p>
+  Date to indicate as selected.
+</p>
+
+
+<h4 id="section-selecteddates">selectedDates <span>array of moments</span></h4>
+<p>
+  Dates to indicate as selected, use this or the above, both won't work.
+</p>
+
+
+<h4 id="section-shownextmonth">showNextMonth <span>boolean</span></h4>
+<p>
+  Show or hide the next month. Defaults to true.
+</p>
+
+
+<h4 id="section-showprevmonth">showPrevMonth <span>boolean</span></h4>
+<p>
+  Show or hide the previous month. Defaults to false.
+</p>
