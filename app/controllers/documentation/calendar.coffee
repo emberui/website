@@ -1,7 +1,12 @@
 controller = Ember.ObjectController.extend
-  selectedDate: [
-    moment('2014-03-25'),
-    moment('2014-03-26')
+  selectedDates: [
+    moment('2014-04-25'),
+    moment('2014-04-26')
+  ]
+
+  disabledDates: [
+    moment('2014-04-25'),
+    moment('2014-04-26')
   ]
 
 `export default controller`

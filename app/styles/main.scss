@@ -249,6 +249,10 @@ strong {
     margin-bottom: 22px;
     font-size: 13px;
 
+    .eui-calendar-wrapper {
+      display: flex;
+    }
+
     &:before {
       content: "OUTPUT";
       color: #b4c5d4;

@@ -56,11 +56,28 @@
   Dates to indicate as disabled.
 </p>
 
+<pre>disabledDates: [
+  moment('2014-04-25'),
+  moment('2014-04-26')
+]</pre>
+
+<pre>\{{eui-calendar disabledDatesBinding="disabledDates"}}</pre>
+
+<div class="output">
+  {{eui-calendar disabledDatesBinding="disabledDates"}}
+</div>
+
 
 <h4 id="section-disablefuture">disableFuture <span>boolean</span></h4>
 <p>
   Prevents the user from navigating into the future. Defaults to false.
 </p>
+
+<pre>\{{eui-calendar disableFuture=true}}</pre>
+
+<div class="output">
+  {{eui-calendar disableFuture=true}}
+</div>
 
 
 <h4 id="section-disablemanipulation">disableManipulation <span>boolean</span></h4>
@@ -73,6 +90,12 @@
 <p>
   Prevents the user from navigating into the past. Defaults to false.
 </p>
+
+<pre>\{{eui-calendar disablePast=true}}</pre>
+
+<div class="output">
+  {{eui-calendar disablePast=true}}
+</div>
 
 
 <h4 id="section-maxfuturedate">maxFutureDate <span>moment</span></h4>
@@ -104,14 +127,36 @@
   Dates to indicate as selected, use this or the above, both won't work.
 </p>
 
+<pre>selectedDates: [
+  moment('2014-04-25'),
+  moment('2014-04-26')
+]</pre>
+
+<pre>\{{eui-calendar selectedDatesBinding="selectedDates"}}</pre>
+
+<div class="output">
+  {{eui-calendar selectedDatesBinding="selectedDates"}}
+</div>
 
 <h4 id="section-shownextmonth">showNextMonth <span>boolean</span></h4>
 <p>
   Show or hide the next month. Defaults to true.
 </p>
 
+<pre>\{{eui-calendar showNextMonth=false}}</pre>
+
+<div class="output">
+  {{eui-calendar showNextMonth=false}}
+</div>
+
 
 <h4 id="section-showprevmonth">showPrevMonth <span>boolean</span></h4>
 <p>
   Show or hide the previous month. Defaults to false.
 </p>
+
+<pre>\{{eui-calendar showPrevMonth=true}}</pre>
+
+<div class="output">
+  {{eui-calendar showPrevMonth=true style="popup"}}
+</div>
