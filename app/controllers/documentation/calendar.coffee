@@ -4,6 +4,8 @@ controller = Ember.ObjectController.extend
     moment('2014-04-26')
   ]
 
+  selectedDate: moment('2014-04-26')
+
   disabledDates: [
     moment('2014-04-25'),
     moment('2014-04-26')
