@@ -1,6 +1,6 @@
 var Helpers = require('../helpers'),
     filterAvailable = Helpers.filterAvailableTasks,
-    LIVERELOAD_PORT = 35729,
+    LIVERELOAD_PORT = 35730,
     liveReloadPort = (parseInt(process.env.PORT || 8000, 10) - 8000) + LIVERELOAD_PORT;
 
 var docs = '{app}/**/*.{js,coffee,em}',
