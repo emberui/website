@@ -12,11 +12,11 @@
 
   <li class="header">Attributes</li>
   <li><a href="#section-allowmultiple">allowMultiple</a></li>
+  <li><a href="#section-continuousselection">continuousSelection</a></li>
   <li><a href="#section-disableddates">disabledDates</a></li>
   <li><a href="#section-disablefuture">disableFuture</a></li>
   <li><a href="#section-disablemanipulation">disableManipulation</a></li>
   <li><a href="#section-disablepast">disablePast</a></li>
-  <li><a href="#section-forcecontinuousselection">forceContinuousSelection</a></li>
   <li><a href="#section-maxfuturedate">maxFutureDate</a></li>
   <li><a href="#section-maxpastdate">maxPastDate</a></li>
   <li><a href="#section-month">month</a></li>
@@ -50,6 +50,26 @@
 <p>
   Set to <em>true</em> to allow the user to select multiple days. If you pass in an array of moments for <em>selection</em> then this property must be set to <em>true</em>.
 </p>
+
+
+<h4 id="section-continuousselection">continuousSelection <span>boolean</span></h4>
+<p>
+  Defaults to <em>true</em>. Set to <em>false</em> to allow the user to select multiple days not adjacent to each other. Clicking on a day will toggle its selection state. Requires <em>allowMultiple</em> to be set to <em>true</em>.
+</p>
+
+<pre>selectedScatteredDates: [
+  moment('2014-04-21'),
+  moment('2014-04-25'),
+  moment('2014-04-29'),
+  moment('2014-04-30')
+]</pre>
+
+
+<pre>\{{eui-calendar selectionBinding="selectedScatteredDates" allowMultiple=true continuousSelection=false}}</pre>
+
+<div class="output">
+  {{eui-calendar selectionBinding="selectedScatteredDates" allowMultiple=true continuousSelection=false}}
+</div>
 
 
 <h4 id="section-disableddates">disabledDates <span>array of monents</span></h4>
@@ -96,26 +116,6 @@
 
 <div class="output">
   {{eui-calendar disablePast=true}}
-</div>
-
-
-<h4 id="section-forcecontinuousselection">forceContinuousSelection <span>boolean</span></h4>
-<p>
-  Defaults to <em>true</em>. Set to <em>false</em> to allow the user to select multiple days not adjacent to each other. Clicking on a day will toggle its selection state. Requires <em>allowMultiple</em> to be set to <em>true</em>.
-</p>
-
-<pre>selectedScatteredDates: [
-  moment('2014-04-21'),
-  moment('2014-04-25'),
-  moment('2014-04-29'),
-  moment('2014-04-30')
-]</pre>
-
-
-<pre>\{{eui-calendar selectionBinding="selectedScatteredDates" allowMultiple=true forceContinuousSelection=false}}</pre>
-
-<div class="output">
-  {{eui-calendar selectionBinding="selectedScatteredDates" allowMultiple=true forceContinuousSelection=false}}
 </div>
 
 
