@@ -11,8 +11,15 @@
   <!-- build:css(tmp/result) /assets/app.min.css -->
   <link rel="stylesheet" href="/assets/app.css">
   <link rel="stylesheet" href="/assets/font-awesome.css">
-  <link rel="stylesheet" href="/vendor/emberui/dist/emberui.css">
-  <link rel="stylesheet" href="/vendor/emberui/dist/default-theme.css">
+
+    <!-- @if dist=false -->
+    <link rel="stylesheet" href="http://localhost:4200/emberui.css">
+    <link rel="stylesheet" href="http://localhost:4200/default-theme.css">
+    <!-- @endif --><!-- @if dist=true -->
+    <link rel="stylesheet" href="/vendor/emberui/dist/emberui.css">
+    <link rel="stylesheet" href="/vendor/emberui/dist/default-theme.css">
+    <!-- @endif -->
+
   <!-- endbuild -->
 
   <!-- for more details visit: https://github.com/yeoman/grunt-usemin -->
