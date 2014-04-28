@@ -83,13 +83,20 @@
 
 <h4 id="section-style">style <span>string</span></h4>
 <p>
-  Aesthetic style of the select.
+  Aesthetic style of the select. The styles are shared with the <em>button</em> component.
 </p>
 
 <h5>Values</h5>
 <ul class="defaults">
   <li>default (default)</li>
+  <li>primary</li>
 </ul>
+
+<div class="output">
+  {{eui-select placeholder="Select a country" options=countries style='default'}}
+  {{eui-select placeholder="Select a country" options=countries style='primary'}}
+</div>
+
 
 
 <h4 id="section-width">width <span>string</span></h4>
