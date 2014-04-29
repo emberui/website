@@ -183,6 +183,18 @@
   The currently selected option. <em>null</em> if nothing is selected.
 </p>
 
+<pre>selectedDate: moment('2014-04-26')</pre>
+
+<pre>\{{eui-selectdate selection=selectedDate placeholder="Select a date"}}
+Current Selection: \{{selectedDate}}</pre>
+
+<div class="output">
+  {{eui-selectdate selection=selectedDate placeholder="Select a date"}}
+  <br />
+  <br />
+  Current Selection: {{selectedDate}}
+</div>
+
 
 <h4 id="section-error">error <span>boolean | string</span></h4>
 <p>
