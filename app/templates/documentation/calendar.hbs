@@ -15,7 +15,6 @@
   <li><a href="#section-continuousselection">continuousSelection</a></li>
   <li><a href="#section-disableddates">disabledDates</a></li>
   <li><a href="#section-disablefuture">disableFuture</a></li>
-  <li><a href="#section-disablemanipulation">disableManipulation</a></li>
   <li><a href="#section-disablepast">disablePast</a></li>
   <li><a href="#section-maxfuturedate">maxFutureDate</a></li>
   <li><a href="#section-maxpastdate">maxPastDate</a></li>
@@ -42,7 +41,7 @@
 
 <div class="output">
   {{eui-calendar style="default"}} <br/><br/>
-  {{eui-calendar style="popup"}}
+  {{eui-calendar style="popup" selection=selectedDate}}
 </div>
 
 
@@ -99,12 +98,6 @@
 <div class="output">
   {{eui-calendar disableFuture=true}}
 </div>
-
-
-<h4 id="section-disablemanipulation">disableManipulation <span>boolean</span></h4>
-<p>
-  Disable built-in manipulation of <em>selectedDate</em> / <em>selectedDates</em> select action still sent
-</p>
 
 
 <h4 id="section-disablepast">disablePast <span>boolean</span></h4>
