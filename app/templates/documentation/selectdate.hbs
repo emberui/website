@@ -3,9 +3,6 @@
 <div class="intro">
   Select a single date or a date range.
 </div>
-<br /><br />
-{{eui-selectdate placeholder="Select a date" selection=maxFutureDate}}
-{{eui-selectdate placeholder="Select dates" selection=selectedDates allowMultiple=true disabledDates=disabledDates}}
 
 <h2>Parameters</h2>
 
@@ -20,6 +17,7 @@
   <li><a href="#section-disabled">disabled</a></li>
 
   <li class="header">Attributes</li>
+  <li><a href="#section-allowmultiple">allowMultiple</a></li>
   <li><a href="#section-disableddates">disabledDates</a></li>
   <li><a href="#section-disablefuture">disableFuture</a></li>
   <li><a href="#section-disablepast">disablePast</a></li>
@@ -124,6 +122,32 @@
   {{eui-selectdate disabled=true placeholder="Select a date"}}
 </div>
 
+
+
+<h4 id="section-allowmultiple">allowMultiple <span>boolean</span></h4>
+<p>
+  If the select should allow the user to select date ranges.
+</p>
+
+<pre>selectedDates: [
+  moment('2014-04-25'),
+  moment('2014-04-26')
+],
+disabledDates: [
+  moment('2014-05-20'),
+  moment('2014-05-21'),
+  moment('2014-05-22'),
+  moment('2014-05-23'),
+  moment('2014-05-24'),
+  moment('2014-05-25'),
+  moment('2014-05-26')
+]</pre>
+
+<pre>\{{eui-selectdate placeholder="Select dates" selection=selectedDates allowMultiple=true disabledDates=disabledDates}}</pre>
+
+<div class="output">
+  {{eui-selectdate placeholder="Select dates" selection=selectedDates allowMultiple=true disabledDates=disabledDates}}
+</div>
 
 
 <h4 id="section-disableddates">disabledDates <span>array of monents</span></h4>
