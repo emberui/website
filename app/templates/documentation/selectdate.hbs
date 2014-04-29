@@ -7,12 +7,11 @@
 {{eui-selectdate placeholder="Select a date" selection=maxFutureDate}}
 {{eui-selectdate placeholder="Select dates" selection=selectedDates allowMultiple=true disabledDates=disabledDates}}
 
-{{selectedDates}}
-
 <h2>Parameters</h2>
 
 <ul class="parameterindex">
   <li class="header">Aesthetic</li>
+  <li><a href="#section-formatting">formatting</a></li>
   <li><a href="#section-size">size</a></li>
   <li><a href="#section-style">style</a></li>
   <li><a href="#section-width">width</a></li>
@@ -28,6 +27,21 @@
   <li><a href="#section-error">error</a></li>
   <li><a href="#section-forcevalidate">forceValidate</a></li>
 </ul>
+
+
+<h4 id="section-formatting">formatting <span>hash</span></h4>
+<p>
+  Settings you want to use when formatting the date for display purposes. See the <a href="isaaccambron.com/twix.js/#smartFormatting">twix.js</a> documentation for a detailed list of options.
+</p>
+<h5>
+  Default Value
+</h5>
+
+<pre>formatting: {
+  yearFormat: "YYYY"
+  monthFormat: "MMMM"
+  dayFormat: "D"
+}</pre>
 
 
 <h4 id="section-size">size <span>string</span></h4>
