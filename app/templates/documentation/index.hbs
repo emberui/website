@@ -80,14 +80,14 @@ note: Until the first beta release is cut, please use `$ bower update emberui` w
 <h3>Dependencies</h3>
 
 <p>
-  We try to limit dependencies other than Ember as much as possible. In the future we would like to eliminate them, but they have made getting to this point much faster.
+  In the future we would like to reduce or even eliminate these dependencies, but they have made getting to this point much faster.
 </p>
 
 <ul class="dependencies">
   <li>
-    <a href="http://handlebarsjs.com">Handlebars</a> (the full one, not the runtime)
+    <a href="http://handlebarsjs.com">Handlebars</a>
     <p>
-      EmberUI makes use of the <em>template</em> tag and thus currently requires the full Handlebars runtime to work. If you get <em>Uncaught TypeError: Object #<c> has no method 'compile' </em> this is your problem.
+      EmberUI includes precomplied versions of all templates so you can use either the full or runtime Handlebars build in your app.
     </p>
   </li>
   <li>
