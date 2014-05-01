@@ -8,6 +8,7 @@ git checkout master
 rm -rf /tmp/dist
 
 # Rebuild the files and copy them to the tmp folder
+bower update emberui
 grunt dist
 cp -rv dist /tmp/dist
 
