@@ -22,9 +22,37 @@
   EmberUI uses <a href="https://github.com/joliss/broccoli">Broccoli</a> for its build process. It makes use of <em>broccoli-dist-es6-module</em> to automatically build AMD, Named AMD, and CommonJS modules. There is also a global version available. If you don't know what this is, use the global version.
 </p>
 
+<p>
+  If you just want to have a look, you can check out the interactive documentation or clone <a href="http://emberjs.jsbin.com/zuric">http://emberjs.jsbin.com/zuric</a> and poke around
+</p>
+
+
 <h3>Installation</h3>
 
-<pre>$ bower install emberui</pre>
+<pre>
+// yourproject/bower.json
+{
+  {
+  "name": "your-project",
+  "dependencies": {
+    "handlebars": "~1.1.2",
+    "jquery": "~1.9.1",
+    "ember": "~1.5.0",
+    "ember-resolver": "git://github.com/stefanpenner/ember-jj-abrams-resolver.git#master",
+    "ic-ajax": "~0.3.0",
+    "loader.js": "git://github.com/stefanpenner/loader.js",
+    "ember-listview": "https://github.com/geekingreen/ember-list-view.git#master",
+    "emberui": "git@github.com:emberui/emberui.git",
+    "momentjs": "~2.6.0",
+    "twix": "~0.4.0"
+  }
+}
+
+$ npm install
+</pre>
+
+note: Until the first beta release is cut, please use `$ bower update emberui` when you need to update EmberUI in your project.
+
 
 <p>
   or just grab your preferred distribution from the <a href="https://github.com/emberui/emberui/tree/master/dist">Github repository</a>. Then include the scripts in <em>app.js</em>.
@@ -32,19 +60,11 @@
 
 <h6>AMD</h6>
 
-<p>
-  Register emberui as a <a href="http://requirejs.org/docs/api.html#packages">package</a>, then:
-</p>
-
-<pre>define(['emberui'], ...)</pre>
-
-<h6>Named AMD</h6>
-
 <pre>import emberui from 'emberui';</pre>
 
 <h6>Globals</h6>
 
-<pre>&lt;script src="bower_components/emberui/dist/globals/main.js"&gt;</script></pre>
+<pre>&lt;script src="vendor/emberui/dist/globals/main.js"&gt;</script></pre>
 
 <br>
 
@@ -53,8 +73,8 @@
 </p>
 
 <pre>
-  &lt;link rel="stylesheet" href="/bower_components/emberui/dist/emberui.css"&gt;
-  &lt;link rel="stylesheet" href="/bower_components/emberui/dist/default-theme.css"&gt;
+  &lt;link rel="stylesheet" href="/vendor/emberui/dist/emberui.css"&gt;
+  &lt;link rel="stylesheet" href="/vendor/emberui/dist/default-theme.css"&gt;
 </pre>
 
 <h3>Dependencies</h3>
