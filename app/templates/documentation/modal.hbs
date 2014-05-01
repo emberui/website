@@ -74,7 +74,7 @@ import modalContentView from 'appkit/views/documentation/modal-example'
 actions: {
   showFullModal: function() {
     modalComponent.show({
-      targetObject: this
+      targetObject: this,
       contentViewClass: modalContentView,
       content: { name: "Jaco" },
       cancel: 'resetData'
