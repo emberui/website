@@ -146,7 +146,8 @@ disabledDates: [
 <pre>\{{eui-selectdate placeholder="Select dates" selection=selectedDates dateRange=true disabledDates=disabledDates}}</pre>
 
 <div class="output">
-  {{eui-selectdate placeholder="Select dates" selection=selectedDates dateRange=true disabledDates=disabledDates}}
+  {{eui-selectdate placeholder="Select dates" value=selectedDatesValues selection=selectedDates dateRange=true disabledDates=disabledDates}}
+  {{selectedDatesValues}}
 </div>
 
 
@@ -213,10 +214,10 @@ disabledDates: [
 Current Selection: \{{selectedDate}}</pre>
 
 <div class="output">
-  {{eui-selectdate selection=selectedDate placeholder="Select a date"}}
+  {{eui-selectdate selection=selectedDate value=selectionValue placeholder="Select a date"}}
   <br />
   <br />
-  Current Selection: {{selectedDate}}
+  Current Selection: {{selectedDate}} - {{selectionValue}} \
 </div>
 
 

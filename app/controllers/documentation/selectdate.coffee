@@ -4,6 +4,10 @@ controller = Ember.ObjectController.extend
     moment('2014-04-26')
   ]
 
+  selectedDatesValues: []
+
+  selectionValue: null
+
   maxFutureDate: moment('2014-05-15')
 
   selectedScatteredDates: [
