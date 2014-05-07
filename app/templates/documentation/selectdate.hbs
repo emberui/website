@@ -8,6 +8,7 @@
 
 <ul class="parameterindex">
   <li class="header">Aesthetic</li>
+  <li><a href="#section-animationstyle">animationStyle</a></li>
   <li><a href="#section-formatting">formatting</a></li>
   <li><a href="#section-size">size</a></li>
   <li><a href="#section-style">style</a></li>
@@ -25,11 +26,18 @@
   <li><a href="#section-maxpastdate">maxPastDate</a></li>
   <li><a href="#section-placeholder">placeholder</a></li>
   <li><a href="#section-selection">selection</a></li>
+  <li><a href="#section-value">value</a></li>
 
   <li class="header">Error Handling</li>
   <li><a href="#section-error">error</a></li>
   <li><a href="#section-forceerrorcheck">forceErrorCheck</a></li>
 </ul>
+
+
+<h4 id="section-animationstyle">animationStyle <span>string</span></h4>
+<p>
+  The name of the animation style to use for open and close animations. See {{link-to "animations" "documentation.animations"}} for more details.
+</p>
 
 
 <h4 id="section-formatting">formatting <span>hash</span></h4>
@@ -218,6 +226,13 @@ Current Selection: \{{selectedDate}}</pre>
   <br />
   Current Selection: {{selectedDate}}
 </div>
+
+
+<h4 id="section-value">value <span>unix time stamp | arry of unix time stamps</span></h4>
+<p>
+  Same as <em>selection</em>, except it returns <em>unix time stamps</em> instead of <em>moment</em> objects.
+</p>
+
 
 
 <h4 id="section-error">error <span>boolean | string</span></h4>

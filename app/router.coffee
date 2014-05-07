@@ -5,6 +5,7 @@ Router.reopen
 
 Router.map ->
   this.resource "documentation", ->
+    this.route 'animations'
     this.route 'layout'
     this.route 'theming'
     this.route 'errorhandling'
