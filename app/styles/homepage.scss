@@ -132,6 +132,30 @@
       }
     }
 
+    .jsbin {
+      display: inline-block;
+      padding: 0 20px;
+      height: 42px;
+      line-height: 40px;
+      font-size: 17px;
+      color: #cadfec;
+      background: rgba(3,8,30,0.25);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s;
+
+      &:hover {
+        background: rgba(3,8,30,0.35)
+      }
+
+      &:after {
+        content: "\f08e";
+        font-family: "FontAwesome";
+        margin-left: 10px;
+        vertical-align: middle;
+      }
+    }
+
     .download {
       position: absolute;
       bottom: 0px;
