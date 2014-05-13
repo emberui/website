@@ -9,7 +9,7 @@ To get started:
 you should have both `broccoli`, `bower` and `grunt` installed globally
 
 ``` sh
-npm install -g gruntcli
+npm install -g grunt-cli
 npm install -g bower
 npm install -g broccoli
 ```
