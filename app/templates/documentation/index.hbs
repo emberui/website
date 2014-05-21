@@ -68,7 +68,7 @@ $ npm install
 
 <pre>&lt;script src="vendor/emberui/dist/globals/emberui.js"&gt;</script></pre>
 
-<br>
+<h6>Styles</h6>
 
 <p>
   There are also some css files that need to be included. The <em>emberui.css</em> stylesheet is required, but <em>default-theme.css</em> is optional if you are creating your own theme.
@@ -78,6 +78,23 @@ $ npm install
   &lt;link rel="stylesheet" href="/vendor/emberui/dist/emberui.css"&gt;
   &lt;link rel="stylesheet" href="/vendor/emberui/dist/default-theme.css"&gt;
 </pre>
+
+<h6>ember-cli</h6>
+<p>It's currently possible to use the named-amd build of emberui with ember-cli. It's as simple as:</p>
+
+<pre>app.import('vendor/emberui/dist/named-amd/emberui.js', {
+    'emberui': ['default']
+});
+app.import('vendor/emberui/dist/emberui.css');
+app.import('vendor/emberui/dist/default-theme.css');</pre>
+
+<p>but in order for the initalizer to trigger you then have to call</p>
+
+<pre>loadInitializers(App, 'emberui');</pre>
+
+<p>in <em>app.js</em>.</p>
+
+<br>
 
 <h3>Dependencies</h3>
 
