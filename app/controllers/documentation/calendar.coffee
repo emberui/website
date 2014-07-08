@@ -13,6 +13,10 @@ controller = Ember.ObjectController.extend
 
   selectedDate: moment('2014-04-26')
 
+  maxPastDate: moment()
+
+  maxFutureDate: moment()
+
   disabledDates: [
     moment('2014-04-25'),
     moment('2014-04-26')
