@@ -12,7 +12,7 @@
     "ember-testing-httpRespond": "~0.1.1",
     "loader.js": "git://github.com/stefanpenner/loader.js",
     "ember-listview": "https://github.com/geekingreen/ember-list-view.git#master",
-    "emberui": "~0.3.0",
+    "emberui": "~0.3.1",
     "momentjs": "~2.6.0",
     "twix": "~0.4.0",
     "Velocity.js": "https://github.com/julianshapiro/velocity.git"
