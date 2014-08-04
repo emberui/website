@@ -96,6 +96,16 @@ app.import('vendor/emberui/dist/default-theme.css');</pre>
 
 <br>
 
+<p>
+note: you also need to import ember-ui's dependencies in your <em>Brocfile.js</em> if you aren't already using them in your project
+<p>
+<pre>
+app.import('vendor/velocity/jquery.velocity.js')
+app.import('vendor/twix/bin/twix.js')
+app.import('vendor/moment/moment.js')
+app.import('vendor/ember-listview/list-view.prod.js')
+</pre>
+
 <h3>Dependencies</h3>
 
 <p>
