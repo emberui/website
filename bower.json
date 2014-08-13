@@ -15,6 +15,6 @@
     "emberui": "~0.3.1",
     "momentjs": "~2.6.0",
     "twix": "~0.4.0",
-    "Velocity.js": "https://github.com/julianshapiro/velocity.git"
+    "velocity": "~0.11.2"
   }
 }
