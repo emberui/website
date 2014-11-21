@@ -15,7 +15,6 @@ Router.map ->
     this.route 'checkbox'
     this.route 'dropbutton'
     this.route 'input'
-    this.route 'modal'
     this.route 'select'
     this.route 'selectdate'
     this.route 'textarea'
