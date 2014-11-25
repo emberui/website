@@ -29,6 +29,19 @@
 
 <h3>Installation</h3>
 
+<h6>ember-cli</h6>
+<pre>
+  npm install emberui/ember-cli-emberui --save && ember g ember-cli-emberui
+</pre>
+<p>
+  Then add this to your <pre>app.js</pre> file: <pre>loadInitializers(App, 'emberui');</pre>
+</p>
+<p>
+  (If you find issues with this install, report here:<a href="https://github.com/emberui/emberui/issues/85">issues/85</a>)
+</p>
+
+
+<h6>Manual</h6>
 <pre>
 // yourproject/bower.json
 {
@@ -77,35 +90,6 @@ $ npm install
 <pre>
   &lt;link rel="stylesheet" href="/vendor/emberui/dist/emberui.css"&gt;
   &lt;link rel="stylesheet" href="/vendor/emberui/dist/default-theme.css"&gt;
-</pre>
-
-<h6>ember-cli</h6>
-<p>It's currently possible to use the named-amd build of emberui with ember-cli. It's as simple as:</p>
-
-<pre>app.import('vendor/emberui/dist/named-amd/emberui.js', {
-  exports: {
-    'emberui': ['default']
-  }
-});
-app.import('vendor/emberui/dist/emberui.css');
-app.import('vendor/emberui/dist/default-theme.css');</pre>
-
-<p>but in order for the initalizer to trigger you then have to call</p>
-
-<pre>loadInitializers(App, 'emberui');</pre>
-
-<p>in <em>app.js</em>.</p>
-
-<br>
-
-<p>
-note: you also need to import ember-ui's dependencies in your <em>Brocfile.js</em> if you aren't already using them in your project
-<p>
-<pre>
-app.import('vendor/velocity/jquery.velocity.js')
-app.import('vendor/twix/bin/twix.js')
-app.import('vendor/moment/moment.js')
-app.import('vendor/ember-listview/list-view.prod.js')
 </pre>
 
 <h3>Dependencies</h3>
